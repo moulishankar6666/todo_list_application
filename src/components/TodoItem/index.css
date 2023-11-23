@@ -3,6 +3,22 @@
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
+  margin-bottom: 15px;
+  gap: 15px;
+  border: solid 1px rgba(128, 128, 128, 0.607);
+  box-shadow: 1px 1px 16px -3px rgba(128, 128, 128, 0.607);
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+.checkbox-title-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.checkbox {
+  height: 18px;
+  width: 18px;
 }
 
 .title {
@@ -11,12 +27,42 @@
   font-size: 16px;
 }
 
+.edit-input {
+  height: 30px;
+  width: 200px;
+}
+
 @media screen and (min-width: 768px) {
   .title {
     font-size: 24px;
   }
 }
 
+.edit-and-delete-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+@media screen and (min-width: 576px) {
+  .edit-and-delete-buttons {
+    flex-direction: row;
+  }
+}
+
+.edit-btn {
+  width: 60px;
+  background-color: #1050e7;
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 5px 0px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 .delete-btn {
   background-color: #ffffff;
   color: #ff0b37;
@@ -28,7 +74,6 @@
   padding-left: 8px;
   padding-bottom: 4px;
   padding-right: 8px;
-  margin-left: 16px;
   outline: none;
   cursor: pointer;
 }
@@ -40,6 +85,10 @@
     padding-left: 16px;
     padding-bottom: 8px;
     padding-right: 16px;
-    margin-left: 32px;
+    margin-left: 12px;
   }
+}
+
+.checked-todo {
+  text-decoration: line-through;
 }

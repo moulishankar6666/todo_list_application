@@ -35,6 +35,29 @@
   margin-top: 12px;
   margin-bottom: 16px;
 }
+.add-new-todo-container {
+  margin-bottom: 20px;
+}
+
+.add-new-todo-container > input {
+  height: 30px;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 4px;
+  border: solid 2px grey;
+}
+.add-new-todo-container > button {
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #ff8542;
+  border-radius: 4px;
+  margin-left: 5px;
+  padding: 0px 10px;
+  font-weight: bold;
+}
 
 @media screen and (min-width: 768px) {
   .heading {
